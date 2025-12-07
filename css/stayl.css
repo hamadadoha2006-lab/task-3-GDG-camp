@@ -1,0 +1,587 @@
+/* & start global class */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.contaner {
+  width: 80%;
+  margin: auto;
+}
+.clear-fix {
+  clear: both;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.text-center {
+  text-align: center;
+}
+/* ^nd global class */
+
+/* &start navBar */
+.my-nav {
+  padding: 20px 30px;
+  background-color: rgba(128, 0, 128, 0.258);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.my-nav .logo {
+  float: left;
+}
+.my-nav .imge {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background-color: purple;
+  vertical-align: middle;
+}
+.my-nav .imge img {
+  width: 100%;
+}
+.my-nav .logo .content {
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.my-nav .nav-links {
+  float: right;
+}
+.my-nav .nav-links ul {
+  list-style: none;
+  font-weight: 600;
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.my-nav .nav-links ul li {
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+}
+.my-nav .nav-links ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.my-nav .nav-links ul .active {
+  padding-bottom: 3px;
+  color: purple;
+}
+.my-nav .nav-links ul .active::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: purple;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.my-nav .nav-links ul .nav-link {
+  padding-bottom: 3px;
+  transition: all 0.8s ease;
+}
+.my-nav .nav-links ul .nav-link:hover {
+  color: purple;
+}
+.my-nav .nav-links ul .nav-link::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: purple;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.8s ease;
+}
+.my-nav .nav-links ul .nav-link:hover::after {
+  width: 100%;
+}
+/* ^ end navBar*/
+
+/* &start Home section */
+header {
+  margin-top: 120px;
+}
+header .contaner .left-sit {
+  width: 45%;
+  float: left;
+}
+header .contaner .left-sit .image {
+  width: 100%;
+  border: 5px solid gray;
+  border-radius: 35px;
+  position: relative;
+}
+header .contaner .left-sit .image img {
+  width: 100%;
+  display: block;
+  padding: 20px;
+  border-radius: 50px;
+}
+header .contaner .left-sit .image .disc {
+  background-color: blueviolet;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+header .contaner .right-sit {
+  width: 50%;
+  float: right;
+}
+header .contaner .right-sit .top-section span {
+  background-color: blueviolet;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  margin: 0 5px;
+}
+header .contaner .right-sit .head-of-section h1 {
+  margin: 15px 0;
+}
+header .contaner .right-sit p {
+  line-height: 40px;
+}
+header .contaner .right-sit .head-of-section span {
+  color: blueviolet;
+}
+header .contaner .right-sit .cost {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  margin-right: 10px;
+}
+header .contaner .right-sit .del {
+  font-size: 23px;
+  color: black;
+  margin-right: 10px;
+}
+header .contaner .right-sit .save {
+  font-size: 14px;
+  color: red;
+  background-color: #ff000047;
+  padding: 2px;
+  border-radius: 50px;
+}
+header .contaner .right-sit .discrip {
+  display: block;
+  margin: 20px 0;
+  color: inherit;
+}
+header .contaner .right-sit button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  transition: all 0.2s;
+  overflow: hidden;
+  margin: 20px 0;
+  cursor: pointer;
+}
+header .contaner .right-sit button:hover {
+  transform: scale(1.03);
+}
+header .contaner .right-sit .shopping {
+  background-color: blueviolet;
+  border: 0;
+  padding: 10px;
+  color: #fff;
+  border-radius: 20px;
+}
+header .contaner .right-sit .fav {
+  background-color: #fff;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 20px;
+}
+/* ^end Home section */
+
+/* &start section two  */
+
+.section-two {
+  padding: 50px 0;
+  background-color: #ffb6c114;
+}
+.section-two .contaner .head-of-section h2 {
+  font-size: 32px;
+  margin: 5px;
+}
+.section-two .contaner .head-of-section span {
+  color: blueviolet;
+}
+.section-two .contaner .head-of-section p {
+  margin: 8px;
+  color: gray;
+  font-style: italic;
+}
+
+.section-two .contaner .all-cards {
+  padding: 50px 0;
+}
+.section-two .contaner .all-cards .card {
+  border: 1px solid gray;
+  width: 23%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  float: left;
+  margin: 0 5px;
+}
+.section-two .contaner .all-cards .card .image {
+  width: 100%;
+  position: relative;
+}
+.section-two .contaner .all-cards .card .image span {
+  background-color: seagreen;
+  padding: 5px;
+  color: #fff;
+  border-radius: 20px;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+.section-two .contaner .all-cards .card .image img {
+  width: 100%;
+  border-radius: 20px;
+}
+.section-two .contaner .all-cards .card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.section-two .contaner .all-cards .card .footer {
+  padding: 15px 0;
+}
+.section-two .contaner .all-cards .card .footer .text {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  width: 49%;
+  vertical-align: middle;
+}
+.section-two .contaner .all-cards .card .footer .btn {
+  display: inline-block;
+  width: 49%;
+  background-color: blueviolet;
+  border: 0;
+  padding: 10px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.section-two .contaner button {
+  border: 2px solid blueviolet;
+  color: blueviolet;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: inherit;
+  transition: all 0.5s ease;
+  word-spacing: 5px;
+}
+.section-two .contaner button:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+/* ^end section two  */
+
+/* &start section three  */
+
+.section-three {
+  padding: 50px 0;
+}
+.section-three .contaner .head-of-section {
+  padding: 40px 0;
+}
+.section-three .contaner .head-of-section h2 {
+  font-size: 32px;
+  margin: 5px;
+}
+.section-three .contaner .head-of-section span {
+  color: blueviolet;
+}
+.section-three .contaner .head-of-section p {
+  margin: 8px;
+  color: gray;
+  font-style: italic;
+}
+.section-three .contaner .left-side {
+  width: 30%;
+  border: 0.5px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  float: left;
+  position: sticky;
+  top: 120px;
+}
+.section-three .contaner .left-side .top-left-side h4 {
+  font-size: 40px;
+}
+.section-three .contaner .left-side .top-left-side .top {
+  color: orange;
+}
+.section-three .contaner .left-side .top-left-side .special {
+  display: block;
+  color: gray;
+  margin: 5px 0;
+}
+.section-three .contaner .left-side .progress {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+.section-three .contaner .left-side .progress .one {
+  margin: 10px 0;
+}
+.section-three .contaner .left-side .progress .one .prog {
+  background-color: #f5deb380;
+  width: 70%;
+  height: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+}
+.section-three .contaner .left-side .progress .one .prog::after {
+  content: "";
+  width: 80%;
+  height: 10px;
+  background-color: orange;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+.section-three .contaner .left-side .progress .two {
+  margin: 10px 0;
+}
+.section-three .contaner .left-side .progress .two .prog {
+  background-color: #f5deb380;
+  width: 70%;
+  height: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+}
+.section-three .contaner .left-side .progress .two .prog::after {
+  content: "";
+  width: 10%;
+  height: 10px;
+  background-color: orange;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+.section-three .contaner .left-side .progress .three {
+  margin: 10px 0;
+}
+.section-three .contaner .left-side .progress .three .prog {
+  background-color: #f5deb380;
+  width: 70%;
+  height: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+}
+.section-three .contaner .left-side .progress .three .prog::after {
+  content: "";
+  width: 3%;
+  height: 10px;
+  background-color: orange;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+.section-three .contaner .left-side .progress .four {
+  margin: 10px 0;
+}
+.section-three .contaner .left-side .progress .four .prog {
+  background-color: #f5deb380;
+  width: 70%;
+  height: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+}
+.section-three .contaner .left-side .progress .four .prog::after {
+  content: "";
+  width: 4px;
+  height: 10px;
+  background-color: orange;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+.section-three .contaner .left-side .progress .five {
+  margin: 10px 0;
+}
+.section-three .contaner .left-side .progress .five .prog {
+  background-color: #f5deb380;
+  width: 70%;
+  height: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+}
+.section-three .contaner .left-side .progress .five .prog::after {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: orange;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+.section-three .contaner .footer {
+  padding: 20px 0;
+}
+.section-three .contaner .footer .left {
+  display: inline-block;
+  width: 49%;
+  font-size: 20px;
+}
+.section-three .contaner .footer .right {
+  display: inline-block;
+  width: 49%;
+  font-size: 20px;
+}
+
+.section-three .contaner .right-side {
+  width: 65%;
+  float: right;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+.section-three .contaner .right-side .card {
+  padding: 15px;
+}
+.section-three .contaner .right-side .card .right {
+  width: 49%;
+  float: left;
+}
+.section-three .contaner .right-side .card .right .image {
+  float: left;
+  margin-right: 15px;
+}
+.section-three .contaner .right-side .card .right .image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.section-three .contaner .right-side .card .right .text {
+  float: left;
+}
+.section-three .contaner .right-side .card .right .text span {
+  font-size: 12px;
+}
+.section-three .contaner .right-side .card .right .text span i {
+  color: orange;
+}
+
+.section-three .contaner .right-side .card .left {
+  float: right;
+  margin-bottom: 10px;
+}
+.section-three .contaner .right-side .card .left .top {
+  background-color: #ffb6c1ad;
+  color: blueviolet;
+  padding: 5px;
+  border-radius: 20px;
+  display: block;
+}
+.section-three .contaner .right-side .card .left .bottom {
+  display: block;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.section-three button {
+  border: 2px solid blueviolet;
+  color: blueviolet;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: inherit;
+  transition: all 0.5s ease;
+  word-spacing: 5px;
+}
+.section-three button:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
+.footers {
+  background-color: #0f172a;
+  padding: 60px 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+.frist {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+}
+.frist .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.frist .imge {
+  width: 40px;
+  height: 40px;
+  background-color: #8b5cf6;
+  border-radius: 10px;
+  float: left;
+  text-align: center;
+}
+.frist .imge img {
+  width: 20px;
+}
+.frist .content {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+.frist p {
+  opacity: 0.6;
+  margin-top: 10px;
+}
+.footer-col {
+  width: 17%;
+  float: left;
+  margin-left: 45px;
+}
+.footer-col .title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-col ul li {
+  margin-bottom: 10px;
+  opacity: 0.55;
+}
